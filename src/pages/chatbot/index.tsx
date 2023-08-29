@@ -62,7 +62,6 @@ const ChatBot = (props: Props) => {
       },
     });
 
-    console.log(response.status);
     if (response.status === 429) {
       setIsPending(false);
       setIsTooManyRequest(true);
@@ -95,8 +94,6 @@ const ChatBot = (props: Props) => {
   }, [messages]);
 
   useEffect(() => {
-    console.log('user', user);
-
     if (user) {
       setActiveSession(user);
     }
