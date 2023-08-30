@@ -31,7 +31,7 @@ const Prompt = (props: Props) => {
               ? props.isPending
                 ? 'AI typing...'
                 : 'Send a message'
-              : 'Click button for new session'
+              : 'Click button to chat'
           }
           disabled={props.isPending || !props.activeSession}
           value={messageContent}
