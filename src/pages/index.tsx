@@ -93,21 +93,23 @@ export default function Home() {
 
       <div className="w-full mt-44 border-t border-b border-slate-800 text-start">
         <div className="w-11/12 mx-auto relative sm:w-4/5 sm:flex">
-          <div className="py-20 px-5 sm:border-r border-slate-800 sm:max-h-screen sm:sticky sm:top-0 sm:w-5/12 md:w-6/12">
-            <h2 className="text-5xl font-bold text-white lg:text-6xl">
-              Chat with unique characters
-            </h2>
-            <p className="mt-10 text-xl text-[rgba(255,255,255,0.7)]">
-              You can chat many different characters for a few set of topics and
-              interests.
-            </p>
-            <Link
-              className="mt-10 w-40 h-14 font-bold bg-[#B6FBFF] rounded-full flex justify-center items-center transition-all duration-300 hover:translate-y-2 hover:bg-white"
-              href={`/chatbot`}
-            >
-              Let&apos;s start chat
-            </Link>
-            <div className="mt-20 w-full bg-[#212121] h-[15rem] sm:h-[40%] lg:h-[45%] xl:h-[50%] rounded-3xl"></div>
+          <div className="py-20 flex flex-col gap-10 px-5 sm:border-r border-slate-800 sm:max-h-screen sm:sticky sm:top-0 sm:w-5/12 md:w-6/12">
+            <div>
+              <h2 className="text-5xl font-bold text-white lg:text-6xl">
+                Chat with unique characters
+              </h2>
+              <p className="mt-10 text-xl text-[rgba(255,255,255,0.7)]">
+                You can chat many different characters for a few set of topics
+                and interests.
+              </p>
+              <Link
+                className="mt-10 w-40 h-14 font-bold bg-[#B6FBFF] rounded-full flex justify-center items-center transition-all duration-300 hover:translate-y-2 hover:bg-white"
+                href={`/chatbot`}
+              >
+                Let&apos;s start chat
+              </Link>
+            </div>
+            <div className="w-full h-2/6 bg-[#212121] rounded-3xl"></div>
           </div>
 
           <div className="mt-20 py-20 text-white border-t sm:border-none sm:border-l border-slate-800 grid justify-center items-center gap-16 xl:grid-cols-2 sm:gap-6 xl:justify-between sm:w-7/12 sm:ml-auto sm:mt-0">
