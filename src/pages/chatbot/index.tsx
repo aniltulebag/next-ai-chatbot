@@ -121,7 +121,7 @@ const ChatBot = (props: Props) => {
 
   return (
     <main className="flex h-full max-h-screen overflow-hidden">
-      <div className="w-2/12 md:w-3/12 lg:w-5/12">
+      <div className="w-2/12 md:w-3/12 lg:w-5/12 flex flex-col justify-between">
         <div className="ml-4 sm:ml-6 md:ml-10 lg:ml-32 mt-10 flex">
           <Link
             href={`/`}
@@ -130,18 +130,17 @@ const ChatBot = (props: Props) => {
             &larr; Back
           </Link>
         </div>
-        <div className="hidden md:block lg:w-7/12 mx-auto text-center">
-          <h1 className="mt-72 lg:text-6xl font-bold">
+        <div className="hidden md:flex flex-col gap-10 lg:w-7/12 mx-auto text-center">
+          <h1 className="lg:text-6xl font-bold">
             <span className="text-[#B6FBFF]">AI</span>{' '}
             <span className="text-white">Chatbot</span>
           </h1>
-          <p className="mt-10 text-[rgba(255,255,255,0.7)] sm:text-sm md:text-xl">
+          <p className="text-[rgba(255,255,255,0.7)] sm:text-sm md:text-xl">
             We’ve trained a model called ChatGPT which interacts in a
             conversational way.
           </p>
-          L
         </div>
-        <div className="w-full relative overflow-hidden h-[24rem] sm:h-[54rem] sm:mt-30 sm:pt-96">
+        <div className="h-3/6 w-full relative overflow-hidden">
           <div className="wave"></div>
         </div>
       </div>
